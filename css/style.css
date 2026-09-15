@@ -5,6 +5,7 @@
 }
 
 header{
+    background-image: url(/imagenes/the-hacker-matrix.gif);
     display: flex;
     left: 0px;
     flex-direction: column;
@@ -15,7 +16,6 @@ header{
     height: 110px;
     top: 0px;
     z-index: 1000;
-    background-color: #069494;
     padding: 10px;
 }
 
@@ -32,7 +32,7 @@ footer{
 header h1{
     font-size: 45px;
     font-weight: bold;
-    color: #3c3c3c;
+    color: #fff;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -43,7 +43,7 @@ nav{
 }
 
 nav a{
-    color: #3c3c3c;
+    color: #fff;
     text-decoration: none;
     padding: 10px;
     font-size: 20px;
@@ -61,7 +61,7 @@ nav a:hover{
 
 div #as_izquierdo{
     width: 200px;
-    height: 400px;
+    height: 1100px;
     background-color: #FC5404;
     margin-right: 20px;
     flex-shrink: 0;
@@ -75,7 +75,7 @@ div main{
 
 div #as_derecho{
     width: 200px;
-    height: 400px;
+    height: 1100px;
     background-color: #FC5404;
     margin-left: 20px;
     flex-shrink: 0;
