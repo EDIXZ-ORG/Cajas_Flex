@@ -67,7 +67,8 @@
             <aside id="as_derecho">
                 <h2>¿Quieres aprender más?</h2>
                 <p>Déjanos tus datos y cuéntanos qué tema de hacking ético te interesa.</p>
-                <form action="#" method="post">
+                <!-- Formulario para recibir los datos del visitante -->
+                <form class="contacto-form" action="#" method="post">
                     <label for="nombre-historia">Nombre</label>
                     <input type="text" id="nombre-historia" name="nombre" required>
 
@@ -81,11 +82,15 @@
                     <textarea id="mensaje-historia" name="mensaje" rows="4" required></textarea>
 
                     <button type="submit">Enviar datos</button>
+                    <!-- Aquí aparece el mensaje después del envío -->
+                    <p class="mensaje-formulario" role="status"></p>
                 </form>
             </aside>
         </div>
     <footer>
         <p>&copy; 2024 Hacking ético. Todos los derechos reservados.</p>
     </footer>        
+    <!-- Archivo que controla el envío del formulario -->
+    <script src="js/formulario.js"></script>
 </body>
 </html>

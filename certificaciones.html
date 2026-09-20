@@ -57,7 +57,8 @@
             <aside id="as_derecho">
                 <h2>Información de clases</h2>
                 <p>Completa el formulario si quieres recibir orientación sobre el aprendizaje.</p>
-                <form action="#" method="post">
+                <!-- Formulario para recibir los datos del visitante -->
+                <form class="contacto-form" action="#" method="post">
                     <label for="nombre-certificaciones">Nombre</label>
                     <input type="text" id="nombre-certificaciones" name="nombre" required>
 
@@ -71,11 +72,15 @@
                     <textarea id="mensaje-certificaciones" name="mensaje" rows="4" required></textarea>
 
                     <button type="submit">Enviar datos</button>
+                    <!-- Aquí aparece el mensaje después del envío -->
+                    <p class="mensaje-formulario" role="status"></p>
                 </form>
             </aside>
         </div>
     <footer>
         <p>&copy; 2024 Hacking ético. Todos los derechos reservados.</p>
     </footer>        
+    <!-- Archivo que controla el envío del formulario -->
+    <script src="js/formulario.js"></script>
 </body>
 </html>
