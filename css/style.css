@@ -5,7 +5,7 @@
 }
 
 header{
-    background-image: url(/imagenes/the-hacker-matrix.gif);
+    background-color: rgb(0, 0, 0);
     display: flex;
     left: 0px;
     flex-direction: row;
@@ -20,13 +20,16 @@ header{
 }
 
 footer{
-    background-image: url(/imagenes/the-hacker-matrix.gif);
+    background-color:rgb(0, 0, 0);
     color: #fff;
     padding: 10px;
     position: sticky;
     bottom: 0px;
     left: 0px;
     width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 header h1{
@@ -54,126 +57,71 @@ nav a{
 
 nav a:hover{
     color: #fff;
-    background-color: #FC5404;
+    background-color: #84e859;
     
 }
 
 .contenedor_principal{
     display: flex;
     gap: 20px;
+    background-color: rgb(10, 63, 10);
 }
 
 div main{
     flex: 1;
-    background-color: #fff;
+    background-color: #a0ed57;
     padding: 20px;
-    height: 490px;
+    min-height: 490px;
     overflow-y: auto;
 }
 
 div #as_derecho{
-    width: 500px;
-    height: 490px;
-    background-color: #FC5404;
-    margin-left: 20px;
-    flex-shrink: 0;
-    overflow-y: auto;
-}
-
-/* Separa el contenido del formulario de los bordes del aside */
-div #as_derecho h2,
-div #as_derecho p,
-/* Ordena los campos uno debajo de otro */
-div #as_derecho form {
-    margin: 15px;
-}
-
-div #as_derecho h2 {
-    color: #fff;
-}
-
-div #as_derecho p {
-    color: #111;
-}
-
-div #as_derecho form {
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 15px; /* Para que haya un espacio entre las cajas */
+    padding: 20px;
+    width: 300px;
+    min-height: 490px;
+    flex-shrink: 0; /* Para que no se deforme el aside */
 }
 
-div #as_derecho label {
-    font-weight: bold;
+#as_derecho2{
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Para que haya un espacio entre las cajas */
+    padding: 20px;
+    width: 300px;
+    min-height: 490px;
+    flex-shrink: 0; /* Para que no se deforme el aside */
 }
 
-/* Da el mismo tamaño y estilo a los campos */
-div #as_derecho input,
-div #as_derecho textarea {
-    border: 1px solid #333;
-    border-radius: 4px;
-    font: inherit;
-    padding: 8px;
+.caja-formulario, .caja-publicidad{
     width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
 }
 
-div #as_derecho textarea {
-    resize: vertical;
-}
-
-/* Estilo del botón de envío */
-div #as_derecho button {
-    background-color: #111;
-    border: 0;
-    border-radius: 4px;
-    color: #fff;
-    cursor: pointer;
-    font-weight: bold;
-    margin-top: 8px;
+.caja-formulario form{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
     padding: 10px;
 }
 
-div #as_derecho button:hover {
-    background-color: #333;
+.caja-formulario h2, .caja-formulario label,
+.caja-formulario, .caja-publicidad{
+    color:#fff;
 }
 
-/* Estilo del mensaje de confirmación */
-div #as_derecho .mensaje-formulario {
-    color: #111;
-    font-weight: bold;
-    margin: 8px 0 0;
+.caja-formulario input, .caja-formulario textarea{
+    width: 100%;
+    box-sizing: border-box;
 }
 
-/* Ajustes para que el formulario se vea bien en celulares */
-@media (max-width: 800px) {
-    header {
-        height: auto;
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    header h1 {
-        font-size: 30px;
-    }
-
-    nav {
-        gap: 8px;
-        justify-content: center;
-        width: 100%;
-    }
-
-    nav a {
-        font-size: 16px;
-        padding: 5px 8px;
-    }
-
-    .contenedor_principal {
-        flex-direction: column;
-    }
-
-    div main,
-    div #as_derecho {
-        height: auto;
-        margin-left: 0;
-        width: 100%;
-    }
+.caja-formulario button{
+    background-color: rgb(111, 111, 89);
+    color: white;
+    padding: 8px;
 }
+
