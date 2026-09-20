@@ -69,7 +69,25 @@
                     </ul>
                 </section>
             </main>
-            <aside id="as_derecho"></aside>
+            <aside id="as_derecho">
+                <h2>Contáctanos</h2>
+                <p>Déjanos tus datos y cuéntanos qué te gustaría aprender.</p>
+                <form action="#" method="post">
+                    <label for="nombre-inicio">Nombre</label>
+                    <input type="text" id="nombre-inicio" name="nombre" required>
+
+                    <label for="correo-inicio">Correo electrónico</label>
+                    <input type="email" id="correo-inicio" name="correo" required>
+
+                    <label for="telefono-inicio">Teléfono</label>
+                    <input type="tel" id="telefono-inicio" name="telefono">
+
+                    <label for="mensaje-inicio">Breve descripción</label>
+                    <textarea id="mensaje-inicio" name="mensaje" rows="4" required></textarea>
+
+                    <button type="submit">Enviar datos</button>
+                </form>
+            </aside>
         </div>
     <footer>
         <p>&copy; 2024 Hacking ético. Todos los derechos reservados.</p>
