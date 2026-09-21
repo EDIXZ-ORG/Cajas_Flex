@@ -50,56 +50,142 @@ nav a{
     text-decoration: none;
     padding: 5px 15px;
     font-size: 20px;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
     border: 2px solid #fff;
     border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 0 15px rgba(255, 255, 255, 0.3);
 }
 
 nav a:hover{
     color: #fff;
-    background-color: #84e859;
-    
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: inset 0 0 22px rgba(255, 255, 255, 0.9), 
+                0 0 18px rgba(255, 255, 255, 0.8); 
 }
 
 .contenedor_principal{
     display: flex;
     gap: 20px;
-    background-color: rgb(10, 63, 10);
+    background-image: url('../imagenes/BackgroundBody.avif');
+    color: #fff;
+    padding: 10px;
 }
 
 div main{
     flex: 1;
-    background-color: #a0ed57;
     padding: 20px;
-    min-height: 490px;
+    height: 455px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 0 15px rgba(255, 255, 255, 10);
+}
+
+div main section, li{
+    margin-bottom: 20px;
+}
+
+div .Cont_Scroll{
+    height: 415px;
     overflow-y: auto;
+    padding-right: 10px; 
 }
 
 div #as_derecho{
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Para que haya un espacio entre las cajas */
+    gap: 15px; 
     padding: 20px;
     width: 300px;
-    min-height: 490px;
-    flex-shrink: 0; /* Para que no se deforme el aside */
+    height: 455px;
+    flex-shrink: 0;
 }
 
 #as_derecho2{
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Para que haya un espacio entre las cajas */
+    gap: 15px;
     padding: 20px;
     width: 300px;
-    min-height: 490px;
-    flex-shrink: 0; /* Para que no se deforme el aside */
+    height: 455px;
+    flex-shrink: 0;
+    overflow-y: auto;
 }
 
-.caja-formulario, .caja-publicidad{
+.caja-formulario {
     width: 100%;
     box-sizing: border-box;
-    background-color: rgb(0, 0, 0);
+    padding: 20px;  
+    border-radius: 12px;
+    border: 1px solid rgba(0, 255, 65, 0.5); 
     text-align: center;
+    
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(8px);
+
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.8), 
+                0 0 20px rgba(0, 255, 65, 0.25),
+                inset 0 0 10px rgba(0, 255, 65, 0.1);
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.caja-formulario:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.9), 
+                0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.caja-formulario input, 
+.caja-formulario textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(10, 15, 44, 0.8);
+    color: #fff;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.caja-formulario input:focus, 
+.caja-formulario textarea:focus {
+    border-color: #00ff41;
+    box-shadow: 0 0 10px rgba(0, 255, 65, 0.6);
+}
+
+
+.caja-formulario button {
+    background: #FC5404;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.caja-formulario button:hover {
+    background-color: #ff7300;
+    box-shadow: 0 0 15px rgba(252, 84, 4, 0.8);
+    transform: scale(1.03);
+}
+
+.caja-publicidad{
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.caja-publicidad img{
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
 }
 
 .caja-formulario form{
@@ -120,7 +206,7 @@ div #as_derecho{
 }
 
 .caja-formulario button{
-    background-color: rgb(111, 111, 89);
+    background-color: rgba(0, 255, 65, 0.6);
     color: white;
     padding: 8px;
 }
