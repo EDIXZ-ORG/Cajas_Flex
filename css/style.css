@@ -4,6 +4,17 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #000;
+}
+
 header{
     background-color: rgb(0, 0, 0);
     display: flex;
@@ -21,6 +32,7 @@ header{
 
 footer{
     background-color:rgb(0, 0, 0);
+    font-size: 13px;
     color: #fff;
     padding: 10px;
     position: sticky;
@@ -68,6 +80,9 @@ nav a:hover{
     display: flex;
     gap: 20px;
     background-image: url('../imagenes/BackgroundBody.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: #fff;
     padding: 10px;
 }
@@ -75,7 +90,7 @@ nav a:hover{
 div main{
     flex: 1;
     padding: 20px;
-    height: 455px;
+    height: 100%;
     border: 1px solid #fff;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.1);
@@ -87,7 +102,7 @@ div main section, li{
 }
 
 div .Cont_Scroll{
-    height: 415px;
+    height: 700px;
     overflow-y: auto;
     padding-right: 10px; 
 }
@@ -98,7 +113,7 @@ div #as_derecho{
     gap: 15px; 
     padding: 20px;
     width: 300px;
-    height: 455px;
+    height: 100%;
     flex-shrink: 0;
 }
 
@@ -108,7 +123,7 @@ div #as_derecho{
     gap: 15px;
     padding: 20px;
     width: 300px;
-    height: 455px;
+    height: 100%;
     flex-shrink: 0;
     overflow-y: auto;
 }
