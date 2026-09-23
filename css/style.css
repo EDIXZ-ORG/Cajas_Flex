@@ -12,7 +12,10 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #000;
+    background-image: url('../imagenes/BackgroundBody.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 header{
@@ -28,6 +31,7 @@ header{
     top: 0px;
     z-index: 1000;
     padding: 10px;
+    border: 1px solid #fff;
 }
 
 footer{
@@ -35,13 +39,14 @@ footer{
     font-size: 13px;
     color: #fff;
     padding: 10px;
-    position: sticky;
+    position: static;
     bottom: 0px;
     left: 0px;
     width: 100%;
     display:flex;
     align-items: center;
     justify-content: space-between;
+    border: 1px solid #fff;
 }
 
 header h1{
@@ -78,19 +83,23 @@ nav a:hover{
 
 .contenedor_principal{
     display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 60%;
+    width: 90%;
+    height: 100%;
     gap: 20px;
-    background-image: url('../imagenes/BackgroundBody.avif');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    margin: 20px auto;
     color: #fff;
     padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #fff;
 }
 
 div main{
-    flex: 1;
+    flex: 3;
     padding: 20px;
-    height: 100%;
+    width: 100%;
     border: 1px solid #fff;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.1);
@@ -101,28 +110,32 @@ div section{
     position: float;
 }
 
-
-
 div main section, li{
     margin-bottom: 20px;
 }
 
 div .Cont_Scroll{
-    height: 700px;
+    height: 500px;
     overflow-y: auto;
     padding-right: 10px; 
 }
 
 div #as_derecho{
+    flex: 1;
     display: flex;
     flex-direction: column;
     gap: 15px; 
     padding: 20px;
-    width: 300px;
+    width: 30px;
     height: 100%;
     flex-shrink: 0;
+    background-color: rgba(255, 255, 255, 0.1);
 }
-
+#as_derecho img{
+    width: 170px;
+    height: auto;
+    border-radius: 12px;
+}
 #as_derecho2{
     display: flex;
     flex-direction: column;
